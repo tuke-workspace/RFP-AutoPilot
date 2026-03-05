@@ -1,0 +1,5 @@
+PyQt5>=5.15.0
+python-docx>=0.8.11
+pywin32>=300
+comtypes>=1.1.14
+pyinstaller>=5.0
