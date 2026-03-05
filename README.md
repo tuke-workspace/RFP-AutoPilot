@@ -95,21 +95,21 @@ quick_build.bat
 
 ```mermaid
 graph TD
-    UI[用户界面 (PyQt5)] --> Controller[业务编排 (DocumentProcessor)]
+    UI["用户界面 (PyQt5)"] --> Controller["业务编排 (DocumentProcessor)"]
     
-    subgraph Core[核心引擎]
-        Controller --> Format[格式化模块]
-        Controller --> Response[智能应答模块]
+    subgraph Core["核心引擎"]
+        Controller --> Format["格式化模块"]
+        Controller --> Response["智能应答模块"]
     end
     
-    subgraph Algorithms[算法层]
-        Response --> Clause[条款层级分析 (Regex)]
-        Response --> Similarity[文本相似度匹配 (Difflib)]
-        Response --> Knowledge[动态知识库加载]
+    subgraph Algorithms["算法层"]
+        Response --> Clause["条款层级分析 (Regex)"]
+        Response --> Similarity["文本相似度匹配 (Difflib)"]
+        Response --> Knowledge["动态知识库加载"]
     end
     
-    Format --> PythonDocx[python-docx]
-    Knowledge --> FileSystem[文件系统]
+    Format --> PythonDocx["python-docx"]
+    Knowledge --> FileSystem["文件系统"]
 ```
 
 ## 📂 项目结构
@@ -122,7 +122,7 @@ word-smart-processor/
 │   ├── clause_utils.py          # 条款识别算法
 │   └── similarity.py            # 相似度匹配算法
 ├── 回应条款/               # 动态知识库（用户可自定义）
-│   ├── 大铁-SCADA.docx
+│   ├── 领域1-产品A.docx
 │   └── ...
 ├── version.txt             # 版本信息
 └── requirements.txt        # 依赖列表
