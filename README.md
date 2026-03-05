@@ -69,7 +69,7 @@
 1. **克隆项目**
    ```bash
    git clone https://github.com/tuke-workspace/RFP-AutoPilot.git
-   cd word-smart-processor
+   cd RFP-AutoPilot
    ```
 
 2. **安装依赖**
@@ -115,7 +115,7 @@ graph TD
 ## 📂 项目结构
 
 ```
-word-smart-processor/
+RFP-AutoPilot/
 ├── src/                    # 源代码
 │   ├── main_word_processor.py   # UI入口
 │   ├── document_processor.py    # 业务逻辑核心
